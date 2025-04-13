@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #1E1E1E;
+  --color-black: #1D2C3C;
+  --color-royal-black: #212738;
+  --color-red: #E04D4D;
+  --color-grey: #5D5D5D;
+  --color-grey-subtle: #B3B3B3;
+  --color-light-black: #333333;
+  --color-dark-grey: #D1D1D1;
+
+  --color-green: 126 21% 38%;
+
+  --color-background: 0 0% 99%;
+  --color-foreground: 211 35% 17%;
+
+  --color-muted: 210 40% 96.1%;
+  --color-muted-foreground: 215.4 16.3% 46.9%;
+
+  --color-popover: 0 0% 100%;
+  --color-popover-foreground: 222.2 84% 4.9%;
+
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 222.2 84% 4.9%;
+
+  --color-border: 214.3 31.8% 91.4%;
+  --color-input: 214.3 31.8% 91.4%;
+
+  --color-primary: 211 35% 17%;
+  --color-primary-foreground: 210 40% 98%;
+
+  --color-secondary: 210 9% 96%;
+  --color-secondary-foreground: 222.2 47.4% 11.2%;
+
+  --color-accent: 210 9% 96%;
+  --color-accent-foreground: 211 35% 17%;
+
+  --color-destructive: 0 84.2% 60.2%;
+  --color-destructive-foreground: 210 40% 98%;
+
+  --color-ring: 222.2 84% 4.9%;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  .header-1 {
+    @apply text-4xl;
+  }
+
+  .header-2 {
+    @apply text-2xl;
+  }
+
+  .text-1 {
+    @apply text-xl;
+  }
+
+  .text-2 {
+    @apply text-lg;
+  }
+
+  .text-3 {
+    @apply text-base;
+  }
+
+  .text-4 {
+    @apply text-sm;
+  }
+
+  .text-5 {
+    @apply text-xs;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
