@@ -1,3 +1,27 @@
+/* Главный файл стилей - все импорты должны быть в начале */
+
+// 1. Импорт шрифтов (должны быть первыми)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+// 2. Кастомные шрифты (если есть)
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/assets/fonts/custom-font.woff2') format('woff2');
+}
+
+// 3. Базовые стили
+:root {
+  --color-black: #1E1E1E;
+  --color-white: #FFFFFF;
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+// 4. Глобальные стили
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
 @import '../public/fonts/fonts.css';
 
 @import 'styles/index.scss';

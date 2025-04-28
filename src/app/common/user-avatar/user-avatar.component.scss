@@ -1,0 +1,66 @@
+.user-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 14px;
+    width: 142px;
+    height: 50px;
+  
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      object-fit: cover;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 1;
+      display: block;
+    }
+  
+    .username {
+      width: 82px;
+      height: 22px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+  
+    @media (max-width: 768px) {
+      width: auto;
+      gap: 10px;
+  
+      .avatar {
+        width: 40px;
+        height: 40px;
+      }
+  
+      .username {
+        font-size: 16px;
+        line-height: 20px;
+        width: auto;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      width: auto;
+      gap: 8px;
+  
+      .avatar {
+        width: 36px;
+        height: 36px;
+      }
+  
+      .username {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
