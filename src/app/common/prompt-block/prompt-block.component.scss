@@ -11,7 +11,7 @@
   flex-grow: 0;
   box-sizing: border-box;
   margin: 0 auto;
-  margin-top: 90px; /* 80px (высота хедера) + 10px (зазор) */
+  margin-top: 90px; 
 }
 
 .frame-4 {
@@ -282,7 +282,6 @@
   flex-grow: 0;
 }
 
-/* Стили для Tooltip container */
 .tooltip-container {
   display: flex;
   flex-direction: column;
@@ -408,7 +407,6 @@
   flex-grow: 0;
 }
 
-/* Ширины для .frame-156 */
 .frame-156 .category-list:nth-child(1) {
   width: 220px;
   order: 0;
@@ -426,7 +424,6 @@
 .frame-156 .category-list:nth-child(2) .category-item:nth-child(2) { width: 225px; } /* VEHICLES & MACHINERY */
 .frame-156 .category-list:nth-child(2) .category-item:nth-child(3) { width: 225px; } /* WEAPONRY */
 
-/* Ширины для .frame-157 */
 .frame-157 .category-list:nth-child(1) {
   width: 220px;
   order: 0;
@@ -444,7 +441,7 @@
 .frame-157 .category-list:nth-child(2) .category-item:nth-child(2) { width: 73px; } /* SPORT */
 .frame-157 .category-list:nth-child(2) .category-item:nth-child(3) { width: 70px; } /* OTHER */
 
-/* Ширины для .frame-158 */
+
 .frame-158 .category-list:nth-child(1) {
   width: 220px;
   order: 0;
