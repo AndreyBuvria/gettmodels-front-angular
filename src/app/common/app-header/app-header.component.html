@@ -1,11 +1,14 @@
 <header class="header">
   <div class="header-top">
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span class="hamburger"></span>
+    </div>
     <div class="horizontal-container">
       <div class="button">
         <a class="get-models" routerLink="/">GET MODELS</a>
       </div>
       <div class="slider"></div>
-      <div class="horizontal-container nav">
+      <div class="horizontal-container nav desktop-nav">
         <span class="catalog">Catalog</span>
         <span class="browse">Browse</span>
         <span class="faq">FAQ</span>
@@ -24,4 +27,11 @@
       </div>
     </div>
   </div>
+  <nav class="nav-menu" [class.active]="isMenuOpen">
+    <div class="horizontal-container nav">
+      <span class="catalog">Catalog</span>
+      <span class="browse">Browse</span>
+      <span class="faq">FAQ</span>
+    </div>
+  </nav>
 </header>

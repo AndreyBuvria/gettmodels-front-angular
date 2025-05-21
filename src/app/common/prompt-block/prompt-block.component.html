@@ -24,55 +24,78 @@
         </div>
         <div class="frame-152">
           <span class="char-count">50/1000</span>
-          <button class="send-btn"></button>
-          <button class="prompt-suggestion-btn"></button>
+          <button class="action-btn send-btn"></button>
+          <button class="action-btn prompt-suggestion-btn"></button>
         </div>
       </div>
     </div>
   </div>
 
-  
   <div class="tooltip-container">
     <div class="tooltip-frame-4">
       <span class="select-category-text">Select category to get started</span>
       <span class="different-categories-text">Different categories to match your expectations</span>
     </div>
+    
+    <button class="hamburger-btn" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="mobile-menu" [ngClass]="{'active': isMenuOpen}">
+      <div class="frame-7-mobile">
+        <div class="frame-156">
+          <div class="category-list">
+            <span class="category-item" *ngFor="let category of categoryGroups[0]">{{ category }}</span>
+          </div>
+          <div class="category-list">
+            <span class="category-item" *ngFor="let category of categoryGroups[1]">{{ category }}</span>
+          </div>
+        </div>
+        <div class="frame-157">
+          <div class="category-list">
+            <span class="category-item" *ngFor="let category of categoryGroups[2]">{{ category }}</span>
+          </div>
+          <div class="category-list">
+            <span class="category-item" *ngFor="let category of categoryGroups[3]">{{ category }}</span>
+          </div>
+        </div>
+        <div class="frame-158">
+          <div class="category-list">
+            <span class="category-item" *ngFor="let category of categoryGroups[4]">{{ category }}</span>
+          </div>
+          <div class="category-list">
+            <span class="category-item" *ngFor="let category of categoryGroups[5]">{{ category }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     <div class="frame-7">
       <div class="frame-156">
         <div class="category-list">
-          <span class="category-item">INTERIOR</span>
-          <span class="category-item">EXTERIOR</span>
-          <span class="category-item">MATERIALS</span>
+          <span class="category-item" *ngFor="let category of categoryGroups[0]">{{ category }}</span>
         </div>
         <div class="category-list">
-          <span class="category-item">MATERIALS</span>
-          <span class="category-item">VEHICLES & MACH</span>
-          <span class="category-item">WEAPONRY</span>
-         </div>
+          <span class="category-item" *ngFor="let category of categoryGroups[1]">{{ category }}</span>
+        </div>
       </div>
       <div class="frame-157">
         <div class="category-list">
-          
-          <span class="category-item">INDUSTRIAL</span>
-          <span class="category-item">FAUNA</span>
-          <span class="category-item">CHARACTERS</span>
+          <span class="category-item" *ngFor="let category of categoryGroups[2]">{{ category }}</span>
         </div>
         <div class="category-list">
-          <span class="category-item">ANATOMY</span>
-          <span class="category-item">SPORT</span>
-          <span class="category-item">OTHER</span>
+          <span class="category-item" *ngFor="let category of categoryGroups[3]">{{ category }}</span>
         </div>
       </div>
       <div class="frame-158">
         <div class="category-list">
-          <span class="category-item">INDUSTRIAL</span>
-          <span class="category-item">FAUNA</span>
-          <span class="category-item">CHARACTERS</span>
+          <span class="category-item" *ngFor="let category of categoryGroups[4]">{{ category }}</span>
         </div>
         <div class="category-list">
-          <span class="category-item">ANATOMY</span>
-          <span class="category-item">SPORT</span>
-          <span class="category-item">OTHER</span>
+          <span class="category-item" *ngFor="let category of categoryGroups[5]">{{ category }}</span>
         </div>
       </div>
     </div>

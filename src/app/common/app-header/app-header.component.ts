@@ -10,4 +10,10 @@ import { UserAvatarComponent } from '../user-avatar/user-avatar.component';
   templateUrl: './app-header.component.html',
   styleUrls: ['./app-header.component.scss']
 })
-export class AppHeaderComponent {}
+export class AppHeaderComponent {
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+}
