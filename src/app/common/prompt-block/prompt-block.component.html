@@ -52,35 +52,8 @@
     </div>
     
     <div class="category-section">
-      <div class="category-column">
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categories.slice(0, 3)">{{ category }}</span>
-        </div>
-      </div>
-      <div class="category-column">
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categories.slice(3, 6)">{{ category }}</span>
-        </div>
-      </div>
-      <div class="category-column">
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categories.slice(6, 9)">{{ category }}</span>
-        </div>
-      </div>
-      <div class="category-column">
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categories.slice(9, 12)">{{ category }}</span>
-        </div>
-      </div>
-      <div class="category-column">
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categories.slice(12, 15)">{{ category }}</span>
-        </div>
-      </div>
-      <div class="category-column">
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categories.slice(15, 18)">{{ category }}</span>
-        </div>
+      <div class="category-list">
+        <span class="category-item" *ngFor="let category of categories">{{ category }}</span>
       </div>
     </div>
   </div>

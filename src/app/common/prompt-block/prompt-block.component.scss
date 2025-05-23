@@ -1,16 +1,17 @@
 .prompt-container {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: env(safe-area-inset-top);
   background: #FCFCFC;
   margin-top: 90px;
   gap: 30px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .main-content {
@@ -211,6 +212,7 @@
   order: 2;
 }
 
+/* Секция с категориями */
 .tooltip-container {
   display: flex;
   flex-direction: column;
@@ -259,34 +261,16 @@
 }
 
 .category-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 колонок на десктопе */
   gap: 16px;
   width: 100%;
   box-sizing: border-box;
-  flex-wrap: nowrap;
-}
-
-.category-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 0;
-  width: 100%;
-  flex: 1 1 16%;
-  min-width: 0;
 }
 
 .category-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  gap: 24px;
-  width: 100%;
+  display: contents; /* Делаем контейнер прозрачным для Grid */
 }
 
 .category-item {
@@ -299,6 +283,7 @@
   color: #333333;
   overflow-wrap: break-word;
   width: 100%;
+  text-align: center; /* Центрируем текст внутри элементов */
 }
 
 .hamburger-btn {
@@ -350,6 +335,7 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  padding: 10px;
   z-index: 9;
   width: 250px;
 }
@@ -503,11 +489,11 @@
     gap: 15px;
     margin: 0 auto;
     margin-top: 80px;
-    align-items: center; 
+    align-items: center;
   }
   
   .prompt-container.px-20 {
-    padding: 15px !important; 
+    padding: 15px !important;
   }
 
   .main-content {
@@ -517,7 +503,7 @@
     padding: 20px 0;
     align-items: center;
     margin: 0 auto;
-    width: 100%; 
+    width: 100%;
   }
   
   .intro-section {
@@ -531,7 +517,7 @@
   .welcome-text {
     font-size: 18px;
     line-height: 24px;
-    max-width: 90%; 
+    max-width: 90%;
     margin: 0 auto;
     width: 100%;
   }
