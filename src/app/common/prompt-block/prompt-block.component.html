@@ -1,6 +1,6 @@
 <div class="prompt-container">
-  <div class="frame-4">
-    <div class="frame-5">
+  <div class="main-content">
+    <div class="intro-section">
       <h1 class="welcome-text">Welcome to GETMODELS The future of 3D model discovery</h1>
       <div class="description-text">
         <p>Describe the 3D model you need, and let our advanced system bring your vision to life.</p>
@@ -10,19 +10,19 @@
     </div>
     <div class="ai-textarea">
       <div class="textarea-main">
-        <div class="frame-151">
+        <div class="input-display">
           <span class="prompt-text">I am looking for modern island kitchen</span>
           <span class="separator"></span>
           <span class="author-text">chen</span>
         </div>
       </div>
       <div class="textarea-footer">
-        <div class="frame-154">
-          <div class="frame-155">
+        <div class="footer-left">
+          <div class="image-option-group">
             <span class="image-option">Use image</span>
           </div>
         </div>
-        <div class="frame-152">
+        <div class="footer-right">
           <span class="char-count">50/1000</span>
           <button class="action-btn send-btn"></button>
           <button class="action-btn prompt-suggestion-btn"></button>
@@ -32,7 +32,7 @@
   </div>
 
   <div class="tooltip-container">
-    <div class="tooltip-frame-4">
+    <div class="tooltip-content">
       <span class="select-category-text">Select category to get started</span>
       <span class="different-categories-text">Different categories to match your expectations</span>
     </div>
@@ -44,58 +44,42 @@
     </button>
     
     <div class="mobile-menu" [ngClass]="{'active': isMenuOpen}">
-      <div class="frame-7-mobile">
-        <div class="frame-156">
-          <div class="category-list">
-            <span class="category-item" *ngFor="let category of categoryGroups[0]">{{ category }}</span>
-          </div>
-          <div class="category-list">
-            <span class="category-item" *ngFor="let category of categoryGroups[1]">{{ category }}</span>
-          </div>
-        </div>
-        <div class="frame-157">
-          <div class="category-list">
-            <span class="category-item" *ngFor="let category of categoryGroups[2]">{{ category }}</span>
-          </div>
-          <div class="category-list">
-            <span class="category-item" *ngFor="let category of categoryGroups[3]">{{ category }}</span>
-          </div>
-        </div>
-        <div class="frame-158">
-          <div class="category-list">
-            <span class="category-item" *ngFor="let category of categoryGroups[4]">{{ category }}</span>
-          </div>
-          <div class="category-list">
-            <span class="category-item" *ngFor="let category of categoryGroups[5]">{{ category }}</span>
-          </div>
+      <div class="mobile-menu-content">
+        <div class="category-list">
+          <span class="category-item" *ngFor="let category of categories">{{ category }}</span>
         </div>
       </div>
     </div>
     
-    
-    <div class="frame-7">
-      <div class="frame-156">
+    <div class="category-section">
+      <div class="category-column">
         <div class="category-list">
-          <span class="category-item" *ngFor="let category of categoryGroups[0]">{{ category }}</span>
-        </div>
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categoryGroups[1]">{{ category }}</span>
+          <span class="category-item" *ngFor="let category of categories.slice(0, 3)">{{ category }}</span>
         </div>
       </div>
-      <div class="frame-157">
+      <div class="category-column">
         <div class="category-list">
-          <span class="category-item" *ngFor="let category of categoryGroups[2]">{{ category }}</span>
-        </div>
-        <div class="category-list">
-          <span class="category-item" *ngFor="let category of categoryGroups[3]">{{ category }}</span>
+          <span class="category-item" *ngFor="let category of categories.slice(3, 6)">{{ category }}</span>
         </div>
       </div>
-      <div class="frame-158">
+      <div class="category-column">
         <div class="category-list">
-          <span class="category-item" *ngFor="let category of categoryGroups[4]">{{ category }}</span>
+          <span class="category-item" *ngFor="let category of categories.slice(6, 9)">{{ category }}</span>
         </div>
+      </div>
+      <div class="category-column">
         <div class="category-list">
-          <span class="category-item" *ngFor="let category of categoryGroups[5]">{{ category }}</span>
+          <span class="category-item" *ngFor="let category of categories.slice(9, 12)">{{ category }}</span>
+        </div>
+      </div>
+      <div class="category-column">
+        <div class="category-list">
+          <span class="category-item" *ngFor="let category of categories.slice(12, 15)">{{ category }}</span>
+        </div>
+      </div>
+      <div class="category-column">
+        <div class="category-list">
+          <span class="category-item" *ngFor="let category of categories.slice(15, 18)">{{ category }}</span>
         </div>
       </div>
     </div>

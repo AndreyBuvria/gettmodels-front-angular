@@ -1,30 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CATEGORIES } from '../models/category.model';
 
 @Component({
   selector: 'app-prompt-block',
-  standalone: true,
   templateUrl: './prompt-block.component.html',
   styleUrls: ['./prompt-block.component.scss'],
   imports: [CommonModule]
 })
 export class PromptBlockComponent implements OnInit {
-  categoryGroups: string[][] = [
-    ['INTERIOR', 'EXTERIOR', 'MATERIALS'], 
-    ['MATERIALS', 'VEHICLES', 'WEAPONRY'], 
-    ['INDUSTRIAL', 'FAUNA', 'CHARACTERS'], 
-    ['ANATOMY', 'SPORT', 'OTHER'], 
-    ['INDUSTRIAL', 'FAUNA', 'CHARACTERS'], 
-    ['ANATOMY', 'SPORT', 'OTHER'] 
-  ];
-
-  isMenuOpen = false;
+  public categories: string[] = [...CATEGORIES];
+  public isMenuOpen: boolean = false;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  public ngOnInit(): void {}
 
-  toggleMenu(): void {
+  public toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
 }

@@ -6,7 +6,6 @@ import { PromptBlockComponent } from './common/prompt-block/prompt-block.compone
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [RouterOutlet, PageLayoutComponent, AppHeaderComponent, PromptBlockComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

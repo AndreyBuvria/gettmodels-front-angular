@@ -5,15 +5,14 @@ import { UserAvatarComponent } from '../user-avatar/user-avatar.component';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule, RouterModule, UserAvatarComponent],
   templateUrl: './app-header.component.html',
-  styleUrls: ['./app-header.component.scss']
+  styleUrls: ['./app-header.component.scss'],
+  imports: [CommonModule, RouterModule, UserAvatarComponent]
 })
 export class AppHeaderComponent {
-  isMenuOpen = false;
+  public isMenuOpen: boolean = false;
 
-  toggleMenu() {
+  public toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
 }

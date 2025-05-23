@@ -23,7 +23,7 @@
     z-index: 1000;
     height: 50px;
     min-height: 50px;
-    background: #FFFFFF; /* Добавляем фон для читаемости */
+    background: #FFFFFF; 
   }
 }
 
@@ -96,7 +96,7 @@
   }
 
   @media (max-width: 480px) {
-    display: none; /* Скрываем основное меню */
+    display: none; 
   }
 }
 
@@ -256,7 +256,6 @@
   }
 }
 
-/* Исправляем hamburger menu */
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -266,7 +265,7 @@
   z-index: 1001;
 
   @media (max-width: 480px) {
-    display: flex; /* Убедимся, что элемент виден */
+    display: flex; 
     align-items: center;
   }
 
@@ -327,7 +326,7 @@
   z-index: 1000;
 
   @media (max-width: 480px) {
-    display: block; /* Убедимся, что меню отображается */
+    display: block; 
   }
 
   &.active {
