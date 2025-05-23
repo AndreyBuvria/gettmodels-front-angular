@@ -1,0 +1,60 @@
+<div class="prompt-container">
+  <div class="main-content">
+    <div class="intro-section">
+      <h1 class="welcome-text">Welcome to GETMODELS The future of 3D model discovery</h1>
+      <div class="description-text">
+        <p>Describe the 3D model you need, and let our advanced system bring your vision to life.</p>
+        <p>Whether it's a futuristic spaceship, a detailed character, or a realistic architectural piece, just type in the details—materials, style, dimensions, or any specific features—and we'll help you find or generate the perfect model.</p>
+        <p>Start describing your 3D model now and turn your ideas into reality!</p>
+      </div>
+    </div>
+    <div class="ai-textarea">
+      <div class="textarea-main">
+        <div class="input-display">
+          <span class="prompt-text">I am looking for modern island kitchen</span>
+          <span class="separator"></span>
+          <span class="author-text">chen</span>
+        </div>
+      </div>
+      <div class="textarea-footer">
+        <div class="footer-left">
+          <div class="image-option-group">
+            <span class="image-option">Use image</span>
+          </div>
+        </div>
+        <div class="footer-right">
+          <span class="char-count">50/1000</span>
+          <button class="action-btn send-btn"></button>
+          <button class="action-btn prompt-suggestion-btn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tooltip-container">
+    <div class="tooltip-content">
+      <span class="select-category-text">Select category to get started</span>
+      <span class="different-categories-text">Different categories to match your expectations</span>
+    </div>
+    
+    <button class="hamburger-btn" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="mobile-menu" [ngClass]="{'active': isMenuOpen}">
+      <div class="mobile-menu-content">
+        <div class="category-list">
+          <span class="category-item" *ngFor="let category of categories">{{ category }}</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="category-section">
+      <div class="category-list">
+        <span class="category-item" *ngFor="let category of categories">{{ category }}</span>
+      </div>
+    </div>
+  </div>
+</div>

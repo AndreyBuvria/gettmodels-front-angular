@@ -2,10 +2,13 @@
   <div header>
     <app-header></app-header>
   </div>
-
   <div body>
+    <div class="px-20">
+      <ng-content select="[body]:not(app-prompt-block)"></ng-content>
+    </div>
+    <div>
+      <app-prompt-block></app-prompt-block>
+    </div>
     <router-outlet></router-outlet>
   </div>
-
-  <!-- Footer будет добавлен позже вашим коллегой -->
 </app-page-layout>
